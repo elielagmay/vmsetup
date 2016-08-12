@@ -55,3 +55,10 @@ cd <repo_dir>
 git config user.name "Elie Lagmay"
 git config user.email ext.elagmay@riotgames.com
 ```
+
+## Install sublime
+
+## Set environment variables
+```
+sudo subl /etc/environment
+```
