@@ -12,7 +12,7 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.4/install.sh | b
 nvm install node
 ```
 
-## Install docker
+## Install Docker
 ```
 sudo -i
 
@@ -35,34 +35,7 @@ chmod +x /usr/local/bin/docker-machine
 exit
 ```
 
-## Generate SSH keys and upload to Github
-```
-ssh-keygen -t rsa -b 4096 -C "<user>@<domain>"
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_rsa
-cat ~/.ssh/id_rsa.pub
-```
-
-## Install git
-```
-sudo apt install git-core
-```
-
-## Clone repo
-```
-mkdir -p ~/projects
-cd ~/projects
-git clone <repo_url> <repo_dir>
-```
-
-## Configure git user
-```
-cd <repo_dir>
-git config user.name "Elie Lagmay"
-git config user.email ext.elagmay@riotgames.com
-```
-
-## Install and configure sublime
+## Install and configure Sublime
 
 Install Sublime
 ```
@@ -95,6 +68,28 @@ sudo fc-cache -f
 ```
 
 Update user preferences [using these settings](https://github.com/elielagmay/vmsetup/blob/master/Preferences.sublime-settings)
+
+## Install Git
+```
+sudo apt install git-core
+git config --global user.name "<name>"
+git config --global user.email <you>@<domain>
+```
+
+## Generate SSH keys and upload to Github
+```
+ssh-keygen -t rsa -b 4096 -C "<user>@<domain>"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub
+```
+
+## Clone project
+```
+mkdir -p ~/projects
+cd ~/projects
+git clone <repo_url> <repo_dir>
+```
 
 ## Set environment variables
 ```
