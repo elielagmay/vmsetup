@@ -7,13 +7,13 @@
 * 32GB disk
 
 ## Install NVM and Node
-```
+```bash
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.4/install.sh | bash && source ~/.bashrc
 nvm install node
 ```
 
 ## Install Docker
-```
+```bash
 sudo -i
 
 apt install apt-transport-https ca-certificates curl
@@ -38,7 +38,7 @@ exit
 ## Install and configure Sublime
 
 Install Sublime
-```
+```bash
 wget https://download.sublimetext.com/sublime-text_build-3114_amd64.deb
 sudo dpkg -i sublime-text_build-3114_amd64.deb
 ```
@@ -54,14 +54,14 @@ Install Sublime Packages using [Package Control](https://packagecontrol.io/insta
 
 To enable SublimeLinter, install the underlying linter packages
 
-```
+```bash
 pip install flake8
 npm install -g eslint
 nvm which default  # <-- copy result to User/SublimeLinter.sublime-settings : user.paths.linux
 ```
 
 Download and install Inconsolata
-```
+```bash
 wget http://levien.com/type/myfonts/Inconsolata.otf
 mkdir -p ~/.fonts
 mv Inconsolata.otf ~/.fonts/Inconsolata.otf
@@ -71,14 +71,14 @@ sudo fc-cache -f
 Update user preferences [using these settings](https://github.com/elielagmay/vmsetup/blob/master/Preferences.sublime-settings)
 
 ## Install Git
-```
+```bash
 sudo apt install git-core
 git config --global user.name "<name>"
 git config --global user.email <you>@<domain>
 ```
 
 ## Generate SSH keys and upload to Github
-```
+```bash
 ssh-keygen -t rsa -b 4096 -C "<user>@<domain>"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
@@ -86,13 +86,13 @@ cat ~/.ssh/id_rsa.pub
 ```
 
 ## Clone project
-```
+```bash
 mkdir -p ~/projects
 cd ~/projects
 git clone <repo_url> <repo_dir>
 ```
 
 ## Set environment variables
-```
+```bash
 sudo subl /etc/environment
 ```
