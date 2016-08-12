@@ -55,8 +55,9 @@ Install Sublime Packages using [Package Control](https://packagecontrol.io/insta
 To enable SublimeLinter, install the underlying linter packages
 
 ```
-npm install -g eslint
 pip install flake8
+npm install -g eslint
+nvm which default  # <-- copy result to User/SublimeLinter.sublime-settings : user.paths.linux
 ```
 
 Download and install Inconsolata
