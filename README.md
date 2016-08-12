@@ -6,6 +6,12 @@
 * 4GB memory
 * 32GB disk
 
+## Install NVM and Node
+```
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.4/install.sh | bash && source ~/.bashrc
+nvm install node
+```
+
 ## Install docker
 ```
 sudo -i
@@ -58,7 +64,27 @@ git config user.email ext.elagmay@riotgames.com
 
 ## Install and configure sublime
 
-Download Sublime - https://download.sublimetext.com/sublime-text_build-3114_amd64.deb
+Install Sublime
+```
+wget https://download.sublimetext.com/sublime-text_build-3114_amd64.deb
+sudo dpkg -i sublime-text_build-3114_amd64.deb
+```
+
+Install Sublime Packages using [Package Control](https://packagecontrol.io/installation)
+* Spacegray Theme
+* SublimeLinter
+* SublimeLinter-flake8
+* SublimeLinter-contrib-eslint
+* Babel
+* Stylus
+* Dockerfile
+
+To enable SublimeLinter, install the underlying linter packages
+
+```
+npm install -g eslint
+pip install flake8
+```
 
 Download and install Inconsolata
 ```
@@ -68,8 +94,7 @@ mv Inconsolata.otf ~/.fonts/Inconsolata.otf
 sudo fc-cache -f
 ```
 
-Update user preferences
-https://github.com/elielagmay/vmsetup/blob/master/Preferences.sublime-settings
+Update user preferences [using these settings](https://github.com/elielagmay/vmsetup/blob/master/Preferences.sublime-settings)
 
 ## Set environment variables
 ```
