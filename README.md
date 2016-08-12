@@ -56,7 +56,20 @@ git config user.name "Elie Lagmay"
 git config user.email ext.elagmay@riotgames.com
 ```
 
-## Install sublime
+## Install and configure sublime
+
+Download Sublime - https://download.sublimetext.com/sublime-text_build-3114_amd64.deb
+
+Download and install Inconsolata
+```
+wget http://levien.com/type/myfonts/Inconsolata.otf
+mkdir -p ~/.fonts
+mv Inconsolata.otf ~/.fonts/Inconsolata.otf
+sudo fc-cache -f
+```
+
+Update user preferences
+https://github.com/elielagmay/vmsetup/blob/master/Preferences.sublime-settings
 
 ## Set environment variables
 ```
