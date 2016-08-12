@@ -48,7 +48,7 @@ Install Sublime Packages using [Package Control](https://packagecontrol.io/insta
 * SublimeLinter
 * SublimeLinter-flake8
 * SublimeLinter-contrib-eslint
-* Babel
+* Babel [**](https://github.com/babel/babel-sublime#setting-as-the-default-syntax)
 * Stylus
 * Dockerfile
 
