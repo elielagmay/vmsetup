@@ -15,15 +15,19 @@ nvm install node
 ## Install Docker
 ```bash
 sudo -i
+apt install apt-transport-https ca-certificates linux-image-extra-$(uname -r) curl
 
-apt install apt-transport-https ca-certificates curl
-
-# Install and start Docker Engine
+# Update APT sources (if needed)
 apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+echo "deb https://apt.dockerproject.org/repo ubuntu-xenial main" > /etc/apt/sources.list.d/docker.list
+apt update
+
+# Install Docker Engine
 apt install docker-engine
 
-# Ensure docker service is running
+# Ensure docker service is running and test
 service docker start
+docker run hello-world
 
 # Setup user group
 usermod -aG docker <user>
