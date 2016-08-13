@@ -19,10 +19,15 @@ sudo -i
 apt install apt-transport-https ca-certificates curl
 
 # Install and start Docker Engine
+apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
 apt install docker-engine
+
+# Ensure docker service is running
+service docker start
+
+# Setup user group
 usermod -aG docker <user>
 newgrp docker
-service docker start
 
 # Install Docker Compose
 curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
