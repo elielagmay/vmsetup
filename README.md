@@ -6,6 +6,12 @@
 * 4GB memory
 * 32GB disk
 
+## Fix Network in Host Machine
+```bash
+cd "C:\Program Files\Oracle\VirtualBox"
+VBoxManage modifyvm "Devbox" --natdnshostresolver1 on
+```
+
 ## Install NVM and Node
 ```bash
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.4/install.sh | bash && source ~/.bashrc
