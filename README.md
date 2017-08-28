@@ -1,8 +1,8 @@
 # Minimal VM setup with Dockerized development
 
 ## Specs
-* VMWare Workstation 12 Player
-* Xubuntu 16.04
+* VirtualBox
+* Ubuntu 16.04
 * 4GB memory
 * 32GB disk
 
